@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="styles/sign.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="form">
+        <div class="create">
+          <h1>Create Account</h1>
+        </div>
+        <form onsubmit="return valid()">
+          <div class="in-form">
+            <div class="name">
+              <div class="first">
+                <label class="labelFirstName">First Name :</label>
+                <input
+                  onkeydown="firstN()"
+                  class="inputFirstName"
+                  type="text"
+                  placeholder="Enter your first name"
+                />
+              </div>
+              <div class="last">
+                <label class="labelLastName">Last Name :</label>
+                <input
+                  onkeydown="lastN()"
+                  class="inputLastName"
+                  type="text"
+                  placeholder="Enter your last name"
+                />
+              </div>
+            </div>
+            <div class="email-phone">
+              <div class="email">
+                <label class="labelEmail">Email :</label>
+                <input
+                  onkeydown="yourEmail()"
+                  class="inputEmail"
+                  type="text"
+                  placeholder="Enter your email address"
+                />
+              </div>
+              <div class="phone">
+                <label class="labelPhoneNumber">Phone Number :</label>
+                <input
+                  onkeydown="yourPhoneNumber()"
+                  class="inputPhoneNumber"
+                  type="text"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+            </div>
+            <div class="pass">
+              <div class="password">
+                <label class="labelPassword">Password :</label>
+                <input
+                  onkeydown="yourPassword()"
+                  class="inputPassword"
+                  type="password"
+                  placeholder="Enter your password"
+                />
+              </div>
+              <div class="conf">
+                <label class="labelConfirmPassword">Confirm Password :</label>
+                <input
+                  onkeydown="yourConfirmPassword()"
+                  class="inputConfirmPassword"
+                  type="password"
+                  placeholder="Confirm your password"
+                />
+              </div>
+            </div>
+            <div class="inf">
+              <div class="gender">
+                <label class="labelGender">Gender :</label>
+                <div class="gen">
+                  <div class="male">
+                    <input
+                      onchange="yourGender()"
+                      class="inputGender"
+                      type="radio"
+                      name="gender"
+                    />
+                    <label>Male</label>
+                  </div>
+                  <div class="female">
+                    <input
+                      onchange="yourGender()"
+                      class="inputGender"
+                      type="radio"
+                      name="gender"
+                    />
+                    <label>Female</label>
+                  </div>
+                </div>
+              </div>
+              <div class="birthdate">
+                <label class="labelBirthdate">Birthdate :</label>
+                <input
+                  onchange="yourBirthdate()"
+                  class="inputBirthdate"
+                  type="date"
+                />
+              </div>
+            </div>
+            <div class="buttons">
+              <input type="reset" />
+              <input type="submit" value="Register" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/account.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>facebook</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="facebook">
+        <h1>Facebook</h1>
+        <p>Connect with friends and the world around you on Facebook.</p>
+      </div>
+      <div class="login">
+        <div class="invalid"><h1>Invalid UserName Or Password</h1></div>
+        <div class="form">
+          <form action="home.html" onsubmit="return valid()">
+            <div class="data">
+              <input
+                class="inputEmail"
+                type="text"
+                placeholder="Email address or phone number"
+              />
+              <input
+                class="inputPassword"
+                type="password"
+                placeholder="password"
+                onfocus="charac()"
+                onblur="out()"
+                onkeydown="num()"
+              />
+            </div>
+            <div class="show">
+              <input onclick="showNum()" class="check" type="checkbox" />
+              <p>Show Password</p>
+            </div>
+            <div class="hide">
+              <p>Password should be more than <span>6 characters</span></p>
+            </div>
+            <div class="log">
+              <input class="sub" type="submit" value="Log In" />
+              <a href="">Forget Password?</a>
+            </div>
+          </form>
+          <hr />
+          <div class="create">
+            <button>
+              <a href="Account.html">Create New Account</a>
+            </button>
+          </div>
+        </div>
+        <div class="page">
+          <a href="">Create a Page</a>
+          <p>for a celebrity, brand or business.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

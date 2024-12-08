@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: #80808021;
+  display: flex;
+  padding: 4.5em;
+  justify-content: space-between;
+}
+
+.main .facebook {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  height: 70%;
+  justify-content: center;
+  width: 50%;
+  flex-basis: 40%;
+}
+
+.main .facebook h1 {
+  font-size: 3.5em;
+  color: #0000ffb8;
+}
+
+.main .facebook p {
+  font-size: 1.6em;
+  color: #5f5e5e;
+}
+
+.main .login {
+  display: flex;
+  flex-basis: 50%;
+  margin-top: 4em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main .login .form {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 80%;
+  height: 90%;
+  border-radius: 6px;
+  box-shadow: -5px 2px 20px 2px rgba(150, 150, 150);
+  padding: 2.5em;
+  justify-content: end;
+}
+
+.invalid {
+  position: absolute;
+  top: 120px;
+  color: red;
+  display: none;
+}
+
+.main .login .form .data {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: center;
+}
+
+.main .login .form .data input {
+  padding: 0.8em 0em 0.8em 2em;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #0000ffe6;
+  border: 1px solid gray;
+}
+
+.main .login .form .data input::placeholder {
+  font-weight: 100;
+}
+
+.main .login .form .data input:focus {
+  outline: none;
+}
+
+.main .login .form .show {
+  display: flex;
+  gap: 0.5em;
+  padding-top: 1.5em;
+}
+
+.main .login .form .show p {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #0000ffb8;
+}
+
+.hide {
+  display: flex;
+  justify-content: center;
+  color: red;
+  padding: 1em;
+}
+
+.hide span {
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+.main .login .form .log {
+  display: flex;
+  flex-direction: column;
+  padding: 1.3em 0em;
+  gap: 3em;
+}
+
+.main .login .form .log input {
+  padding: 0.8em;
+  background: #1877f2;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  border: 1px solid;
+}
+
+.main .login .form .log input:hover {
+  background: #3f51b5;
+}
+
+.main .login .form .log a {
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.3em;
+  color: #1877f2;
+}
+
+.main .login .form .log a:hover {
+  text-decoration: underline;
+}
+
+.main .login .form .create {
+  display: flex;
+  padding-top: 2em;
+  justify-content: center;
+}
+
+.main .login .form .create button {
+  padding: 1.3em 2.3em;
+  border-radius: 6px;
+  border: 1px;
+  background: #42b72a;
+  cursor: pointer;
+}
+
+.main .login .form .create button:hover {
+  background: #26892a;
+}
+
+.main .login .form .create button a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.main .login .page {
+  display: flex;
+  gap: 0.5em;
+  align-items: end;
+}
+
+.main .login .page a {
+  color: #1877f2;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.main .login .page p {
+  font-size: 1.1em;
+  color: #616161;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main .login {
+    margin-top: 0;
+  }
+  .main .login .form {
+    width: 100%;
+    height: 100%;
+  }
+  .main .login .page {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+  }
+  .main .facebook {
+    align-items: center;
+    width: 100%;
+  }
+  .main .login {
+    margin-top: 1em;
+    width: 100%;
+  }
+  .main .login .form {
+    width: 100%;
+    height: 92%;
+    padding: 1.5em;
+  }
+  .main .login .form .log {
+    gap: 1em;
+    padding: 1em 0em;
+  }
+  .main .login .form .create {
+    padding-top: 1em;
+  }
+  .main .login .page {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5em;
+  }
+}

@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+label {
+  color: #1877f2;
+  font-weight: bold;
+}
+
+input {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: 1px solid gray;
+  color: #1877f2;
+  font-size: 15px;
+}
+
+input:focus {
+  outline-color: #1877f2;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: #80808021;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .form {
+  background: white;
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+  height: 90%;
+  box-shadow: -5px 2px 20px 2px rgba(150, 150, 150);
+}
+
+.main .form .create {
+  flex-basis: 13%;
+  background: #1877f2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+  color: white;
+}
+
+.main .form .in-form {
+  flex-basis: 87%;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .form .in-form .name {
+  flex-basis: 20%;
+  display: flex;
+}
+
+.in-form .name .first,
+.in-form .name .last {
+  margin: 1em;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.main .form .in-form .email-phone {
+  flex-basis: 20%;
+  display: flex;
+}
+
+.in-form .email-phone .email,
+.in-form .email-phone .phone {
+  margin: 1em;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.main .form .in-form .pass {
+  flex-basis: 20%;
+  display: flex;
+}
+
+.in-form .pass .password,
+.in-form .pass .conf {
+  margin: 1em;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.main .form .in-form .inf {
+  flex-basis: 20%;
+  display: flex;
+}
+
+.in-form .inf .gender,
+.in-form .inf .birthdate {
+  margin: 1em;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.in-form .inf .gender .gen {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.in-form .inf .gender .gen label {
+  color: #666;
+  cursor: pointer;
+}
+
+.main .form .in-form .buttons input {
+  background: #1877f2;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main .form {
+    width: 80%;
+    height: 100%;
+  }
+  .main .form .in-form {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    height: 200vh;
+  }
+  .main .form {
+    width: 80%;
+    height: 90%;
+  }
+  .main .form .in-form {
+    padding: 0.5em;
+  }
+  .main .form .in-form .name,
+  .main .form .in-form .email-phone,
+  .main .form .in-form .pass,
+  .main .form .in-form .inf {
+    flex-direction: column;
+  }
+}
