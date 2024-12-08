@@ -12,13 +12,13 @@
         <div class="create">
           <h1>Create Account</h1>
         </div>
-        <form onsubmit="return valid()">
+        <form action="index.html" onsubmit="return valid()">
           <div class="in-form">
             <div class="name">
               <div class="first">
                 <label class="labelFirstName">First Name :</label>
                 <input
-                  onkeydown="firstN()"
+                  onkeyup="firstN()"
                   class="inputFirstName"
                   type="text"
                   placeholder="Enter your first name"
@@ -27,7 +27,7 @@
               <div class="last">
                 <label class="labelLastName">Last Name :</label>
                 <input
-                  onkeydown="lastN()"
+                  onkeyup="lastN()"
                   class="inputLastName"
                   type="text"
                   placeholder="Enter your last name"
@@ -38,7 +38,7 @@
               <div class="email">
                 <label class="labelEmail">Email :</label>
                 <input
-                  onkeydown="yourEmail()"
+                  onkeyup="yourEmail()"
                   class="inputEmail"
                   type="text"
                   placeholder="Enter your email address"
@@ -47,7 +47,7 @@
               <div class="phone">
                 <label class="labelPhoneNumber">Phone Number :</label>
                 <input
-                  onkeydown="yourPhoneNumber()"
+                  onkeyup="yourPhoneNumber()"
                   class="inputPhoneNumber"
                   type="text"
                   placeholder="Enter your phone number"
@@ -58,7 +58,7 @@
               <div class="password">
                 <label class="labelPassword">Password :</label>
                 <input
-                  onkeydown="yourPassword()"
+                  onkeyup="yourPassword()"
                   class="inputPassword"
                   type="password"
                   placeholder="Enter your password"
@@ -67,7 +67,7 @@
               <div class="conf">
                 <label class="labelConfirmPassword">Confirm Password :</label>
                 <input
-                  onkeydown="yourConfirmPassword()"
+                  onkeyup="yourConfirmPassword()"
                   class="inputConfirmPassword"
                   type="password"
                   placeholder="Confirm your password"

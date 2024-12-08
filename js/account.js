@@ -14,9 +14,9 @@ let labelGender = document.querySelector(".labelGender");
 let inputGender = document.querySelector(".inputGender");
 let labelBirthdate = document.querySelector(".labelBirthdate");
 let inputBirthdate = document.querySelector(".inputBirthdate");
-let checkEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-let checkPhoneNumber = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-let xx = false;
+let checkEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+let checkPhoneNumber = /^[0-9]{10}$/;
+let isSelect = false;
 
 function firstN() {
   if (inputFirstName.value == "") {
@@ -136,10 +136,10 @@ function valid() {
   if (inputPhoneNumber.value == "") {
     labelPhoneNumber.innerHTML = "Please Enter Your phoneNumber";
     labelPhoneNumber.style.color = "yellow";
-    xx;
+    isSelect;
   }
   if (!checkPhoneNumber.test(inputPhoneNumber.value)) {
-    xx;
+    isSelect;
   }
   if (inputPassword.value == "") {
     labelPassword.innerHTML = "Please Enter Your Password";
