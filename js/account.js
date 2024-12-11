@@ -12,6 +12,7 @@ let labelConfirmPassword = document.querySelector(".labelConfirmPassword");
 let inputConfirmPassword = document.querySelector(".inputConfirmPassword");
 let labelGender = document.querySelector(".labelGender");
 let inputGender = document.querySelector(".inputGender");
+let inputGenderFemale = document.querySelector(".inputGenderFemale");
 let labelBirthdate = document.querySelector(".labelBirthdate");
 let inputBirthdate = document.querySelector(".inputBirthdate");
 let checkEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -160,7 +161,7 @@ function valid() {
     return false;
   }
 
-  if (inputGender.checked == false) {
+  if (inputGender.checked == false && inputGenderFemale.checked == false) {
     labelGender.innerHTML = "Please Enter Your Gender";
     labelGender.style.color = "yellow";
     return false;
